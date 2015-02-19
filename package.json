@@ -1,0 +1,28 @@
+{
+  "name": "es6-demo",
+  "version": "1.0.0",
+  "description": "An ECMAScript 6 demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mmaelzer/es6-demo"
+  },
+  "keywords": [
+    "es6"
+  ],
+  "author": "Mike Maelzer <mmaelzer@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mmaelzer/es6-demo/issues"
+  },
+  "homepage": "https://github.com/mmaelzer/es6-demo",
+  "dependencies": {
+    "babel": "^4.3.0",
+    "colors": "^1.0.3",
+    "lodash": "^3.2.0",
+    "watch": "^0.14.0"
+  }
+}
