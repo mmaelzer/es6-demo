@@ -13,10 +13,9 @@ let runs = 0;
 function node(unlock, file) {
   if (path.basename(__filename) === file) return unlock();
   if (path.extname(file) !== '.js') return unlock();
-  runs++;
   let cmd = `babel-node ${file}`;
 
-  console.log(colors.blue(`[${runs}]❯ `) + colors.green(`${cmd}`));
+  console.log(colors.blue('['+(++runs)+']❯ ') + colors.green(`${cmd}`));
   exec(cmd, (err, stdout, stderr) => {
     console.log(colors.white(stderr || stdout));
     unlock();
