@@ -18,9 +18,10 @@ function node(unlock, file) {
 
   clear();
   console.log(colors.blue('['+(++runs)+']❯ ') + colors.green(`${cmd}`));
-  exec(cmd, (err, stdout, stderr) => {
+  let child = exec(cmd, (err, stdout, stderr) => {
     console.log(colors.white(stderr || stdout));
     unlock();
+    child.kill();
   });
 }
 
