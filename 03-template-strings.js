@@ -6,7 +6,5 @@ let parent = 'mike';
 let child = 'orson';
 
 // Normal string building
-log(parent + ' has a child named ' + child);
+log(`${parent} has a child named ${child}`);
 
-// Clever string building
-log([child, 'has a child named', parent].join(' '));

@@ -2,10 +2,10 @@
 const log = console.log;
 
 // Old style
-var doubles = [1,2,3,4,5].map(function(num) {
-  return num * 2;
-});
-
+var doubles = [1,2,3,4,5].map(num =>
+                              num * 2
+);
+console.log(doubles);
 
 // Old style scoping
 function Person(name, friends) {
@@ -13,10 +13,9 @@ function Person(name, friends) {
   this.friends = friends;
 }
 
-Person.prototype.showFriends = function() {
-  var self = this;
-  this.friends.forEach(function(friend) {
-    log(self.name, 'is friends with', friend);
+Person.prototype.showFriends = () => {
+  this.friends.forEach((friend) => {
+    log(this.name, 'is friends with', friend);
   });
 };
 
