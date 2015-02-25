@@ -15,6 +15,11 @@ let bar = {
   }
 };
 
+let boo = foo();
+console.log(boo.next());
+console.log(boo.next());
+
 for (let f of bar) {
   console.log(f);
 }
+

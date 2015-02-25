@@ -8,3 +8,7 @@
 
 
 // static
+
+
+// getters & setters
+

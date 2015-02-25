@@ -1,5 +1,4 @@
 // Template strings provide syntactic sugar for building strings
-//
 
 const log = console.log;
 
